@@ -1,0 +1,1248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+    <HEAD>
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+        <META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+        <TITLE>LaCuerda: Glosario de Acordes de Charango</TITLE>
+        <script src="/UTIL/mainJS.js"></script>
+        <script type='text/javascript'>
+            var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+            (function () {
+                var gads = document.createElement('script');
+                gads.async = true;
+                gads.type = 'text/javascript';
+                var useSSL = 'https:' == document.location.protocol;
+                gads.src = (useSSL ? 'https:' : 'http:') +
+                        '//www.googletagservices.com/tag/js/gpt.js';
+                var node = document.getElementsByTagName('script')[0];
+                node.parentNode.insertBefore(gads, node);
+            })();
+        </script>
+
+        <script type='text/javascript'>
+            googletag.cmd.push(function () {
+                googletag.defineSlot('/37756251/728top', [[970, 90], [728, 90]], 'div-gpt-ad-1430236222398-0').addService(googletag.pubads());
+
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+            });
+        </script>
+        <LINK href="/UTIL/estilo.css" rel="stylesheet" type="text/css">
+        <style>
+            #fretboard td { padding:0 }
+            tr.guitar {font:bold 8pt/10px verdana; color:#aaa; }
+            #cmdpanel  { margin-bottom:12px }
+            #cmdpanel  td {padding:0; font:bold 10pt verdana; color:#000 }
+            td.instruc2 {padding-left:100px; width:250px; font:normal 10pt arial; color:#000 }
+            td.instruc2 ul { padding-left:20px } 
+            td.instruc2 li {margin-bottom:6px }
+        </style>
+    </HEAD>
+
+    <BODY onload="">
+        <script>document.addEventListener('DOMContentLoaded', function () {
+                mShFrames('')
+            })</script>
+        <div id=f_top></div><script>mShTop();</script>
+        <div id=f_main><div class=i>
+                <div class=t style="color:#800080; border-color:#800080">Acordes de Charango</div>
+
+
+            </div></div>
+
+        <div class=m>
+            <div id=ban728><!-- /37756251/728top -->
+                <div id='div-gpt-ad-1430236222398-0'>
+                    <script type='text/javascript'>
+                        googletag.cmd.push(function () {
+                            googletag.display('div-gpt-ad-1430236222398-0');
+                        });
+                    </script>
+                </div>
+            </div>
+
+
+            <script type="text/javascript">
+
+                      var chordtable = new Array(
+                        [
+//Do
+                            "03000", "23000", "33000", "33345", "8787X", "CACCX",
+//Do#
+                            "14111", "44456", "9898X", "DBDDD",
+//RE
+                            "20222", "00222", "55567", "A9A9X", "ECEEX",
+//RE#
+                            "31330", "66678", "BABAX", "FDFFF",
+//MI
+                            "02444", "22041", "02041", "77789", "CBCBX",
+//FA
+                            "10102", "30102", "53555", "8889A", "DCDCX",
+//FA#
+                            "2121X", "64666", "999AB", "EDEDX",
+//Sol
+                            "32320", "02320", "7A777", "AAABC", "FEFEX",
+//Sol#
+                            "43401", "86888", "BBBCD",
+//LA
+                            "00012", "20012", "5454X", "97999", "CCCDE",
+//LA#
+                            "11123", "65650", "A8AAA", "DDAAA",
+//Si
+                            "22234", "42234", "7676X", "B9BBB", "EEBBB"],
+//Menore
+
+                        [
+//DOm
+                            "33330", "13300", "8687X", "8ABC8", "FFFFX",
+//Do# m
+                            "04011", "44446", "9798X", "XBCDD",
+//REm
+                            "10122", "00122", "55557", "A8A9X", "DCDEX",
+//RE#m
+                            "2123X", "66668", "B9BAX", "BDEFX",
+//Em
+                            "02040", "22040", "02020", "02340", "7777X", "CACBX",
+//Fm
+                            "13101", "33101", "X3455", "8888A", "DBDCX",
+//F#m
+                            "20212", "24562", "9999B", "ECEDX",
+//Gm
+                            "31320", "01320", "35673", "AAAAC", "FDFE0",
+//G#m
+                            "4243X", "46784", "BBBBX",
+//Am
+                            "00002", "20002", "57505", "0789X", "CCCCX",
+//A#m
+                            "11113", "6465X", "689A6", "DDDDX",
+//Bm
+                            "22224", "41114", "7576X", "79AB7", "EEEEX"],
+//dim
+                        [
+                            "2323X", "8686X", "A9ABX", "EFEFX",
+//dO#
+                            "34040", "04340", "9797X", "0ACDC",
+//RE
+                            "15121", "4545X", "A8A8X", "XBCDC",
+//RE#
+                            "20232", "5656X", "X9B9B", "EXEFE",
+// E
+                            "01040", "31340", "6767X", "CACAX",
+//F
+                            "12151", "48454", "7878X", "DBDBX",
+//F#
+                            "20202", "50565", "8989X", "ECECX",
+//G
+                            "31310", "6A676", "9A9AX", "FDFDX",
+//G#
+                            "4242X", "7576X", "ABABX",
+//A
+                            "5353X", "8689X", "BCBCX",
+//A#
+                            "0101X", "6464X", "979AX", "CDCDX",
+//B
+                            "1212X", "7575X", "A8ABX", "DEDEX"],
+//aug
+//C
+                        [
+                            "03001", "47445", "8B889", "CBCCX",
+//C#
+                            "1011X", "5455X", "XX6789",
+//D 
+                            "2330XX", "X3345X", "9899X", "DCDDX",
+//D#
+                            "25223", "96667", "A9AAX", "EDEEX",
+//E
+                            "3233X", "7677X", "BABBX", "FEFFX",
+//F
+                            "03001", "4344X", "8788X", "CBCCX",
+//f
+                            "14112", "58556", "9C99A", "DCDDX",
+//G
+                            "32330", "8+88X", "BABBX", "FEFFX",
+//g
+                            "03001", "0340X", "8788X", "CBCCX",
+//A
+                            "1011X", "5455X", "9899X", "DCDDX",
+//AS
+                            "2122X", "6566X", "A9AAX", "DCDDX",
+//B
+                            "32330", "7677X", "BABBX", "FEFFX"],
+ //sus   
+                            ["XXXXX",
+
+                            "XXXXX",
+
+                            "XXXXX",
+
+                            "XXXXX",
+
+                            "XXXXX",
+
+                            "XXXXX",
+
+                            "XXXXX",
+
+                            "XXXXX",
+
+                            "XXXXX",
+
+                            "XXXXX",
+
+                            "XXXXX",
+
+                            "XXXXX"],
+//*sus4  
+//     [
+
+//"13300", "33350", "88800",
+//"4421X", "44466", "9998X",
+//"30320", "5032X", "5557X",
+//"4143X", "6643X", "6668X",
+//"00044", "70044", "7779X",
+//"11100", "11103", "6365X",
+//"2221X", "7476X", "9976X",
+//"33320", "35300", "85870",
+//"4443X", "9698X", "1198X",
+//"00022", "50022", "A7A9X",
+//"1113X", "11133", "6665X",
+//"2224X", "0206X", "7776X"],
+
+//
+//6
+//C
+                        [
+                            "53000", "00000", "30000", "57575",
+//C#
+                            "11111", "41111", "4465X",
+//D
+                            "22222", "52222", "5576x",
+//D#
+                            "33333", "36600", "66870",
+//E
+                            "02011", "44044", "44744",
+//F
+                            "13122", "55555", "88A9X",
+//F
+                            "24233", "66666", "99BAX",
+//G
+                            "02020", "02320", "77777",
+//G
+                            "13131", "4313X", "88888",
+//A
+                            "20012", "24242", "04566",
+//A
+                            "11120", "11120", "31120",
+//B
+                            "4223X", "2243X", "46464"],
+
+    
+ //7
+                        [
+                            "01000", "31000", "33343", "X7675", "CDCCC",
+
+                            "12111", "44454", "9878X",
+                           
+                            "20202", "23222", "55565", "A989X", "XCACB",
+
+                            "34333", "66676", "BA9AX", "9ABAX",
+                                                            
+                            "02021", "02424", "77787", "0BAB9",
+
+                            "10132", "56555", "88898", "XCBCA",
+                                                           
+                            "01213", "67666", "999A9",
+
+                            "32120", "35354", "78777", "AAABA",
+                           
+                            "4323X", "2343X", "89888", "BBBCB",
+
+                            "00010", "04342", "07576", "9A999",
+                            
+                            "11121", "6545X", "4565X",
+                            
+                            "22232", "7656X", "5676X", "BCBBB"],
+//maj7 
+//C
+                        [
+                            "02000", "32000", "77870",
+                            //C#
+                            "13111", "43111", "8898X",
+                            //D
+                            "24222", "5422X", "99A9X",
+                            //D#
+                            "35333", "65333", "AABAX",
+                            //E
+                            "02031", "42034", "46444",
+                            //F
+                            "00102", "03102", "57555",
+                            //F#
+                            "1121X", "11213", "68666",
+                            //G
+                            "22220", "22320", "79777",
+                            //G#
+                            "33430", "364XX", "8A888",
+                            //A
+                            "00011", "40012", "4454X",
+                            //A#
+                            "11122", "5565X", "55657",
+                            //B
+                            "22233", "6676X", "66768"],
+//9
+                        [
+                            //C
+                            "03323", "33023", "65000",
+                            //C#
+                            "44134", "12131", "1243X", "46454",
+                            //D
+                            "23022", "00202", "03222",
+                            //D#
+                            "14130", "11110", "14330", "34353",
+                            //E
+                            "22021", "02221", "45464",
+                            //F
+                            "10130", "30130", "33530", "36500",
+                            //F#
+                            "01211", "21011", "4101X", "44243",
+                            //G
+                            "52120", "53350", "5575X",
+                            //G#
+                            "21201", "4120X", "6346X", "6686X",
+                            //A
+                            "02312", "32012", "70076",
+                            //A#
+                            "13123", "65403", "4560X", "8568X",
+                            //B
+                            "X4534", "7453X", "9679X", "9CBBX"],
+//add9
+                        [
+                            //C
+                            "03020", "33020", "35000",
+                            //C#
+                            "14131", "1443X", "44458",
+                            //d
+                            "20022", "00222", "0556X",
+                            //D#
+                            "11130", "66350", "36353",
+                            //e
+                            "2244X", "0246X", "47464",
+                            //f
+                            "10100", "30100", "33550",
+                            //f#
+                            "31211", "21411", "4466X",
+                            //g
+                            "32322", "3252X", "5577X",
+                            //G#
+                            "43433", "63433", "4660X",
+                            //a
+                            "02012", "00014", "54544",
+                            //A#
+                            "13123", "65655", "85655",
+                            //b
+                            "24234", "76766", "94766"],
+//m6
+                        [
+                            //C
+                            "53330", "33530", "56500",
+                            //C#
+                            "01011", "04443", "67686",
+                            //d
+                            "12121", "7555X", "5575X", "78A9X",
+                            //D#
+                            "23233", "8666X", "6686X", "89BAX",
+                            //e
+                            "02010", "32010", "88970",
+                            //f
+                            "13121", "4312X", "A888X",
+                            //f#
+                            "24232", "5423X", "B999X",
+                            //g
+                            "01020", "01320", "35343",
+                            //G#
+                            "12131", "1243X", "46454",
+                            //a
+                            "20002", "00202", "57565",
+                            //A#
+                            "11110", "31110", "34650",
+                            //b
+                            "4222X", "2242X", "4576X"],
+//m7
+                        [
+                            //C
+                            "33333", "66600", "86600",
+                            //C#
+                            "02011", "44444", "74444",
+                            //D
+                            "55555", "85555", "88A9X",
+                            //D#
+                            "24233", "66666", "96666",
+                            //E
+                            "02020", "32020", "77777",
+                            //F
+                            "13131", "4313X", "888888",
+                            //F#
+                            "00212", "24242", "99999",
+                            //G
+                            "11120", "11120", "35353",
+                            //G#
+                            "2243X", "46464", "7646X",
+                            //A
+                            "00000", "30000", "57575",
+                            //A#
+                            "11111", "4465X", "68676",
+                            //B
+                            "22222", "5576X", "79797"],
+//mmaj7
+                        [
+                            //C
+                            "33334", "76700", "86770",
+                            //C#
+                            "43011", "44001", "44445", "8798X",
+                            //D
+                            "14122", "15112", "55556", "98A9X",
+                            //D#
+                            "25233", "26223", "66667", "B9AAX",
+                            //E
+                            "02031", "02030", "32030", "76040",
+                            //F
+                            "03101", "03455", "88889",
+                            //F#
+                            "10212", "2011X", "1021X", "23242",
+                            //G
+                            "31220", "21220", "21320", "65660",
+                            //G#
+                            "3243X", "42430", "46474",
+                            //A
+                            "00001", "40001", "40005",
+                            //A
+                            "11112", "5465X", "60656",
+                            //B
+                            "22223", "6222X", "6576X"],
+//m9
+                        [
+                            //C
+                            "11420", "35333", "65335", "35635",
+                            //
+                            "44034", "04434", "46444",
+                            //D
+                            "20122", "03122", "00125", "05555",
+                            //
+                            "1121X", "1423X", "68666",
+                            //E
+                            "42020", "22020", "02220", "05760",
+                            //F
+                            "43130", "33131", "33430",
+                            //
+                            "30011", "44242", "40066",
+                            //G
+                            "01322", "30123", "10323", "55650",
+                            //
+                            "XBB9BX", "42233", "66768", "6978X",
+                            //A
+                            "22002", "02302", "00304", "70000",
+                            //
+                            "866686", "44103", "44655", "8898X",
+                            //B
+                            "44224", "24222", "55766", "99A9X"],
+//11
+                        [
+                            //C
+                            "11020", "13023", "85650",
+                            //C  
+                            "22131", "12231", "44234",
+                            //D
+                            "005500", "33022", "03322",
+                            //D
+                            "41110", "44130", "4465X",
+                            //E
+                            "20021", "22022", "00224",
+                            //F
+                            "30133", "53333", "60878",
+                            //F
+                            "43011", "02211", "42243",
+                            //G
+                            "15500", "58700", "55755",
+                            //G
+                            "44203", "442333", "66866",
+                            //A
+                            "32022", "52020", "00777",
+                            //A
+                            "43433", "86687", "88A88",
+                            //B
+                            "22012", "02212", "99B99"],
+//7sus4
+                        [
+                            "11100", "11300", "33353",
+                            
+                            "22211", "44464", "7998X",
+                                
+                            "33322", "35500", "55500",
+
+                            "44433", "66686", "BB9AX",
+
+                            "02022", "05544", "77797",
+
+                            "11135", "66655", "888A8",
+
+                            "2201X", "0221X", "04244",
+
+                            "15300", "13120", "33120",
+
+                            "4423X", "2443X", "99988",
+
+                            "00020", "30010", "3554X",
+
+                            "11131", "1143X", "4665X",
+
+                            "22242", "00244", "5776X"],
+//13
+
+                        [
+                            //C
+                            "51000", "30003", "57600",
+                            //C#
+                            "64454", "68786", "6678A",
+                            //D
+                            "22002", "02202", "75565",
+                            //D#
+                            "8465X", "86676", "8A9A8",
+                            //E
+                            "04424", "45066", "97787",
+                            //F
+                            "44334", "85558", "A8898",
+                            //F#
+                            "44033", "06666", "96669",
+                            //G
+                            "02120", "02550", "57750",
+                            //G#
+                            "11201", "13231", "11235",
+                            //A
+                            "20010", "32010", "X456X",
+                            //A#
+                            "31121", "3545X", "35453",
+                            //B
+                            "42232", "40234", "46544"],
+
+    
+//6add9 
+                        [
+                            //C
+                            "33022", "55000", "05500",
+                            //C
+                            "44133", "66456", "66656",
+                            //D
+                            "22022", "02222", "00767",
+                            //D
+                            "13130", "11100", "1333X", "33133",
+                            //E
+                            "22011", "02211", "X2466",
+                            //F
+                            "10120", "55100", "15500", "55355",
+                            //F
+                            "21231", "4123X", "66466", "66686",
+                            //G
+                            "02322", "00324", "00777",
+                            //G
+                            "11101", "11401", "6345X", "66455",
+                            //A
+                            "22012", "02212", "80066",
+                            //A
+                            "33123", "35303", "85650", "8567X",
+                            //B
+                            "44X34", "44134", "96786", "9678X"],
+//dim5
+                        [
+                            //C
+                            "2300X", "0320X", "8786X",
+                            //C#
+                            "14110", "34110", "98970",
+                            //D
+                            "2542X", "4546X", "A9A8X",
+                            //D#
+                            "3033X", "50330", "5657X",
+                            //E
+                            "4104X", "4144X", "6768X",
+                            //F
+                            "5255X", "7075X", "7879X",
+                            //F#
+                            "2120X", "23203", "6366X",
+                            //G
+                            "32310", "74770", "7A970",
+                            //G#
+                            "4342X", "4540X", "8588X",
+                            //A
+                            "5453X", "5699X", "9699X",
+                            //A#
+                            "01023", "05043", "A7AAX",
+                            //B
+                            "1213X", "7675X", "B8BBX"],
+//7dim5
+                        [
+                            //C
+                            "2100X", "01203", "6786X",
+                            //C#
+                            "12110", "32110", "78970",
+                            //D
+                            "4322X", "2342X", "89A8X",
+                            //D#
+                            "54330", "34530", "54530",
+                            //E                           
+                            "01021", "4102X", "6544X",
+                            //F                                         
+                            "50134", "7655X", "5676X",
+                            //F#
+                            "01203", "03203", "6786X",
+                            //G
+                            "12310", "34750", "78970",
+                            //G#
+                            "2342X", "2540X", "A988X",
+                            //A                                           
+                            "34530", "54230", "9AB90",
+                            //A#
+                            "01021", "4102X", "4564X",
+                            //B
+                            "1252X", "5675X", "78B9X"],
+//7maj5
+                        [
+                            //C
+                            "01001", "43003", "6788X",
+                            //C#
+                            "12112", "7455X", "7899X",
+                            //D
+                            "23223", "2560X", "8566X",
+                            //D#
+                            "34334", "34730", "9677X",
+                            //E
+                            "03021", "43021", "05405",
+                            //F
+                            "5413X", "56556", "9655X",
+                            //F#
+                            "2102X", "0122X", "67667",
+                            //G
+                            "12130", "12330", "76750",
+                            //G#
+                            "03201", "2344X", "07465",
+                            //A
+                            "10110", "34550", "4550",
+                            //A#
+                            "4122X", "4566X", "A968X",
+                            //B
+                            "5233X", "5677X", "BA79X"],
+//maj9
+                        [
+                            //C
+                            "02020", "05304", "75000",
+                            //C#
+                            "13131", "88888", "88988",
+                            //D
+                            "00212", "04222", "04567",
+                            //D#
+                            "11120", "35353", "AABAA",
+                            //E
+                            "22031", "02231", "6687X",
+                            //F
+                            "10000", "00100", "30055",
+                            //F#
+                            "41111", "11211", "4465X",
+                            //G
+                            "22322", "52220", "55760",
+                            //G#
+                            "33433", "63430", "66400",
+                            //A
+                            "40014", "00414", "44544",
+                            //A#
+                            "85555", "55655", "88A9X",
+                            //B
+                            "96666", "66766", "99BAX"],
+ 
+//ESPECIALES        
+                        [
+                            //CE
+                            "03000", "CACCX",
+                            //CG               
+                            "33345",
+                            //d/f#
+                            "20222", "ECEEX",
+                            //D/A
+                            "55567",
+                            //E/B
+                            "77789",
+                            //E/G#
+                            "02444",
+                            //Em/B
+                            "7777X",
+                            //F/C
+                            "8889A",
+                            //F/A
+                            "53555",
+                            //Fm/C
+                            "8888A",
+                            //G/D
+                            "AAABC",
+                            //G/B
+                            "7A777",
+                            //Gm/D
+                            "7A777","AAAAC",
+                            //A/E
+                            "00012", "CCCDE",
+                            //A/C#
+                            "97999",
+                            
+                            //Am/E
+                            "00002",
+                            //Am/C
+                            "01223X"]
+                            );
+                                                
+
+
+
+
+                                        var chordversions = new Array(
+                                                [["C", "DO", 6], ["C#", "DO#", 4], ["D", "RE", 5], ["D#", "RE#", 4], ["E", "MI",54], ["F", "FA", 5], ["F#", "FA#", 4], ["G", "SOL", 5], ["G#", "SOL#", 4], ["A", "LA", 5], ["A#", "LA#", 4], ["B", "SI", 5]],
+                                                [["Cm", "DOm", 5], ["C#m", "DO#m", 4], ["Dm", "REm", 5], ["D#m", "RE#m", 4], ["Em", "MIm", 6], ["Fm", "FAm", 4], ["F#m", "FA#m", 4], ["Gm", "SOLm", 5], ["G#m", "SOL#m", 3], ["Am", "LAm", 5], ["A#m", "LA#m", 4], ["Bm", "SIm", 4]],
+                                                [["Cdim", "DOdim", 4], ["C#dim", "DO#dim", 4], ["Ddim", "REdim", 4], ["D#dim", "RE#dim", 4], ["Edim", "MIdim", 4], ["Fdim", "FAdim", 4], ["F#dim", "FA#dim", 4], ["Gdim", "SOLdim", 4], ["G#dim", "SOL#dim", 3], ["Adim", "LAdim", 3], ["A#dim", "LA#dim", 4], ["Bdim", "SIdim", 4]],
+                                                [["Caug", "DOaug", 4], ["C#aug", "DO#aug", 3], ["Daug", "REaug", 4], ["D#aug", "RE#aug", 4], ["Eaug", "MIaug", 4], ["Faug", "FAaug", 4], ["F#aug", "FA#aug", 4], ["Gaug", "SOLaug", 4], ["G#aug", "SOL#aug", 4], ["Aaug", "LAaug", 4], ["A#aug", "LA#aug", 4], ["Baug", "SIaug", 4]],
+                                                [["Csus", "DOsus", 3], ["C#sus", "DO#sus", 3], ["Dsus", "REsus", 4], ["D#sus", "RE#sus", 2], ["Esus", "MIsus", 5], ["Fsus", "FAsus", 4], ["F#sus", "FA#sus", 3], ["Gsus", "SOLsus", 3], ["G#sus", "SOL#sus", 3], ["Asus", "LAsus", 4], ["A#sus", "LA#sus", 2], ["Bsus", "SIsus", 2]],
+                                                [["C6", "DO6", 4], ["C#6", "DO#6", 3], ["D6", "RE6", 3], ["D#6", "RE#6", 3], ["E6", "MI6", 3], ["F6", "FA6", 3], ["F#6", "FA#6", 3], ["G6", "SOL6", 4], ["G#6", "SOL#6", 3], ["A6", "LA6", 3], ["A#6", "LA#6", 3], ["B6", "SI6", 3]],
+                                                [["C7", "DO7", 5], ["C#7", "DO#7", 3], ["D7", "RE7", 5], ["D#7", "RE#7", 4], ["E7", "MI7", 4], ["F7", "FA7", 4], ["F#7", "FA#7", 3], ["G7", "SOL7", 4], ["G#7", "SOL#7", 4], ["A7", "LA7", 4], ["A#7", "LA#7", 3], ["B7", "SI7", 4]],
+                                                [["Cmaj7", "DOmaj7", 3], ["C#maj7", "DO#maj7", 3], ["Dmaj7", "REmaj7", 3], ["D#maj7", "RE#maj7", 3], ["Emaj7", "MImaj7", 3], ["Fmaj7", "FAmaj7", 3], ["F#maj7", "FA#maj7", 3], ["Gmaj7", "SOLmaj7", 3], ["G#maj7", "SOL#maj7", 3], ["Amaj7", "LAmaj7", 3], ["A#maj7", "LA#maj7", 3], ["Bmaj7", "SImaj7", 3]],
+                                                [["C9", "DO9", 3], ["C#9", "DO#9", 4], ["D9", "RE9", 3], ["D#9", "RE#9", 4], ["E9", "MI9", 3], ["F9", "FA9", 4], ["F#9", "FA#9", 4], ["G9", "SOL9", 3], ["G#9", "SOL#9", 4], ["A9", "LA9", 3], ["A#9", "LA#9", 4], ["B9", "SI9", 4]],
+                                                [["Cadd9", "DOadd9", 3], ["C#add9", "DO#add9", 3], ["Dadd9", "REadd9", 3], ["D#add9", "RE#add9", 3], ["Eadd9", "MIadd9", 3], ["Fadd9", "FAadd9", 3], ["F#add9", "FA#add9", 3], ["Gadd9", "SOLadd9", 3], ["G#add9", "SOL#add9", 3], ["Aadd9", "LAadd9",3], ["A#add9", "LA#add9", 3], ["Badd9", "SIadd9", 3]],
+                                                [["Cm6", "DOm6", 3], ["C#m6", "DO#m6", 3], ["Dm6", "REm6", 4], ["D#m6", "RE#m6", 4], ["Em6", "MIm6", 3], ["Fm6", "FAm6", 3], ["F#m6", "FA#m6", 3], ["Gm6", "SOLm6", 3], ["G#m6", "SOL#m6", 3], ["Am6", "LAm6", 3], ["A#m6", "LA#m6", 3], ["Bm6", "SIm6", 3]],
+                                                [["Cm7", "DOm7", 3], ["C#m7", "DO#m7", 3], ["Dm7", "REm7", 3], ["D#m7", "RE#m7", 3], ["Em7", "MIm7", 3], ["Fm7", "FAm7", 3], ["F#m7", "FA#m7", 3], ["Gm7", "SOLm7", 3], ["G#m7", "SOL#m7", 3], ["Am7", "LAm7", 3], ["A#m7", "LA#m7", 3], ["Bm7", "SIm7", 3]],
+                                                [["Cmmaj7", "DOmmaj7", 3], ["C#mmaj7", "DO#mmaj7", 4], ["Dmmaj7", "REmmaj7", 4], ["D#mmaj7", "RE#mmaj7", 4], ["Emmaj7", "MImmaj7", 4], ["Fmmaj7", "FAmmaj7", 3], ["F#mmaj7", "FA#mmaj7", 4], ["Gmmaj7", "SOLmmaj7", 4], ["G#mmaj7", "SOL#mmaj7", 3], ["Ammaj7", "LAmmaj7", 3], ["A#mmaj7", "LA#mmaj7", 3], ["Bmmaj7", "SImmaj7", 3]],
+                                                [["Cm9", "DOm9", 4], ["C#m9", "DO#m9", 3], ["Dm9", "REm9", 4], ["D#m9", "RE#m9", 3], ["Em9", "MIm9", 4], ["Fm9", "FAm9", 3], ["F#m9", "FA#m9", 3], ["Gm9", "SOLm9", 4], ["G#m9", "SOL#m9", 4], ["Am9", "LAm9", 4], ["A#m9", "LA#m9", 4], ["Bm9", "SIm9", 4]],
+                                                [["C11", "DO11", 3], ["C#11", "DO#11", 3], ["D11", "RE11", 3], ["D#11", "RE#11", 3], ["E11", "MI11", 3], ["F11", "FA11", 3], ["F#11", "FA#11", 3], ["G11", "SOL11", 3], ["G#11", "SOL#11", 3], ["A11", "LA11", 3], ["A#11", "LA#11", 3], ["B11", "SI11", 3]],
+                                                [["C7sus4", "DO7sus4", 3], ["C#7sus4", "DO#7sus4", 3], ["D7sus4", "RE7sus4", 3], ["D#7sus4", "RE#7sus4", 3], ["E7sus4", "MI7sus4", 3], ["F7sus4", "FA7sus4", 3], ["F#7sus4", "FA#7sus4", 3], ["G7sus4", "SOL7sus4", 3], ["G#7sus4", "SOL#7sus4", 3], ["A7sus4", "LA7sus4", 3], ["A#7sus4", "LA#7sus4", 3], ["B7sus4", "SI7sus4", 3]],
+                                                [["C13", "DO13", 3], ["C#13", "DO#13", 3], ["D13", "RE13", 3], ["D#13", "RE#13", 3], ["E13", "MI13", 3], ["F13", "FA13", 3], ["F#13", "FA#13", 3], ["G13", "SOL13", 3], ["G#13", "SOL#13", 3], ["A13", "LA13", 3], ["A#13", "LA#13", 3], ["B13", "SI13", 3]],
+                                                [["C6add9", "DO6add9", 3], ["C#6add9", "DO#6add9", 3], ["D6add9", "RE6add9", 3], ["D#6add9", "RE#6add9", 4], ["E6add9", "MI6add9", 3], ["F6add9", "FA6add9", 4], ["F#6add9", "FA#6add9", 4], ["G6add9", "SOL6add9", 3], ["G#6add9", "SOL#6add9", 4], ["A6add9", "LA6add9", 3], ["A#6add9", "LA#6add9", 4], ["B6add9", "SI6add9", 4]],
+                                                [["Cdim5", "DOdim5", 3], ["C#dim5", "DO#dim5", 3], ["Ddim5", "REdim5", 3], ["D#dim5", "RE#dim5", 3], ["Edim5", "MIdim5", 3], ["Fdim5", "FAdim5", 3], ["F#dim5", "FA#dim5", 3], ["Gdim5", "SOLdim5", 3], ["G#dim5", "SOL#dim5", 3], ["Adim5", "LAdim5", 3], ["A#dim5", "LA#dim5", 3], ["Bdim5", "SIdim5", 3]],
+                                                [["C7dim5", "DO7dim5", 3], ["C#7dim5", "DO#7dim5", 3], ["D7dim5", "RE7dim5", 3], ["D#7dim5", "RE#7dim5", 3], ["E7dim5", "MI7dim5", 3], ["F7dim5", "FA7dim5", 3], ["F#7dim5", "FA#7dim5", 3], ["G7dim5", "SOL7dim5", 3], ["G#7dim5", "SOL#7dim5", 3], ["A7dim5", "LA7dim5", 3], ["A#7dim5", "LA#7dim5", 3], ["B7dim5", "SI7dim5", 3]],
+                                                [["C7maj5", "DO7maj5", 3], ["C#7maj5", "DO#7maj5", 3], ["D7maj5", "RE7maj5", 3], ["D#7maj5", "RE#7maj5", 3], ["E7maj5", "MI7maj5", 3], ["F7maj5", "FA7maj5", 3], ["F#7maj5", "FA#7maj5", 3], ["G7maj5", "SOL7maj5", 3], ["G#7maj5", "SOL#7maj5", 3], ["A7maj5", "LA7maj5", 3], ["A#7maj5", "LA#7maj5", 3], ["B7maj5", "SI7maj5", 3]],
+                                                [["Cmaj9", "DOmaj9", 3], ["C#maj9", "DO#maj9", 3], ["Dmaj9", "REmaj9", 3], ["D#maj9", "RE#maj9", 3], ["Emaj9", "MImaj9", 3], ["Fmaj9", "FAmaj9", 3], ["F#maj9", "FA#maj9", 3], ["Gmaj9", "SOLmaj9", 3], ["G#maj9", "SOL#maj9", 3], ["Amaj9", "LAmaj9", 3], ["A#maj9", "LA#maj9", 3], ["Bmaj9", "SImaj9", 3]],
+                                                
+                                                    [["C/E", "DO/MI", 2], ["C/G", "DO/SOL", 1], ["D/F#", "RE/FA#", 2],
+
+                                                    ["D/A", "RE/LA", 1], ["E/B", "MI/SI", 1], 
+                                                    
+                                                    ["E/G#", "MI/SOL#", 1], ["Em/B", "MIm/SI",1], 
+
+                                                    ["F/C", "FA/DO", 1],
+
+                                                    ["F/A", "FA/LA", 1],
+
+                                                    ["Fm/C", "FAm/DO", 1], ["G/D", "SOL/RE", 1], 
+
+                                                    ["G/B", "SOL/SI", 1], ["Gm/D", "SOLm/RE",2], 
+
+                                                    ["A/E", "LA/MI", 2], ["A/C#", "LA/DO#", 1],  
+
+                                                    , ["Am/E", "LAm/MI", 1], ["Am/C", "LAm/DO", 1]]
+
+                                                );
+
+
+
+
+                                        var currentversion = 0
+
+                                        var thischordversions = 0
+
+                                        var lastchord = -1
+                                        var lastmode = -1
+                                        var lastversion = 0
+
+                                        var currenttype = 1
+                                        var lasttype = 1
+
+                                        var notation = 0
+
+                                        function nextversion()
+                                        {
+                                            lastversion = currentversion
+                                            if (currentversion < thischordversions - 1) {
+                                                currentversion++
+                                            } else {
+                                                currentversion = 0
+                                            }
+                                            displaychord()
+                                        }
+
+                                        function updateheading()
+                                        {
+                                            var list1 = document.getElementById("chord")
+                                            var list2 = document.getElementById("majmin")
+                                            var list3 = document.getElementById("special")
+
+                                            a = list1.selectedIndex - 1
+                                            b = list2.selectedIndex - 1
+                                            c = list3.selectedIndex - 1
+
+                                            version = currentversion + 1
+
+
+                                            if (list1.disabled && c >= 0) {
+                                                chordname = chordversions[17][c][notation]
+                                                trailversion = version + " de " + thischordversions
+                                            } else if (list3.disabled && a >= 0) {
+                                                chordname = chordversions[b][a][notation]
+                                                trailversion = version + " de " + thischordversions
+                                            } else {
+                                                chordname = ""
+                                                trailversion = ""
+                                            }
+                                            var heading = document.getElementById("cmdpanel").rows
+                                            cell = heading[0].cells
+                                            cell[0].innerHTML = "Acorde: " + chordname
+                                            cell[1].innerHTML = "Versión " + trailversion
+                                        }
+
+
+
+                                        function displaychord(type)
+                                        {
+
+                                            if (type == 1) {
+
+                                                var x = document.getElementById("chord")
+                                                chordname = x.options[x.selectedIndex].text
+                                                chordvalue = x.options[x.selectedIndex].value - 1
+
+                                                var y = document.getElementById("majmin")
+                                                modename = y.options[y.selectedIndex].text
+                                                modevalue = y.options[y.selectedIndex].value - 1
+
+
+                                            } else if (type == 2) {
+
+                                                var x = document.getElementById("special")
+                                                chordname = x.options[x.selectedIndex].text
+                                                chordvalue = x.options[x.selectedIndex].value - 1
+
+                                                //var y = document.getElementById("special")
+                                                //modename = y.options[y.selectedIndex].text
+                                                //modevalue = y.options[y.selectedIndex].value - 1
+                                                modevalue = 22
+
+                                            }
+
+
+                                            //txt = "Mode = "+modevalue+" Chord = "+chordvalue+" Version "+currentversion
+                                            //alert(txt)
+
+
+                                            if (((chordvalue != lastchord) || (modevalue != lastmode) || (currentversion != lastversion)) && (chordvalue >= 0) && (modevalue >= 0)) {
+                                                if ((chordvalue != lastchord) || (modevalue != lastmode)) {
+                                                    currentversion = 0;
+                                                }
+                                                lastchord = chordvalue
+                                                lastmode = modevalue
+                                                thischordversions = chordversions[modevalue][chordvalue][2]
+                                                //chordfullname=chordversions[modevalue][chordvalue][notation]
+                                                //txt="Acorde con "+thischordversions+" versiones"
+                                                //alert(txt)
+                                                //getchord(chordvalue,modevalue,currentversion)
+                                                //updateheading(chordfullname,currentversion,thischordversions)
+                                                updateheading()
+                                                var chord = new Array(6)
+                                                chord = getchord(chordvalue, modevalue, currentversion)
+                                                cleanfretboard()
+                                                var chords = document.getElementById("fretboard").rows
+
+                                                for (i = 0; i < 5; i++) {
+                                                    fret = chords[i].cells
+                                                    if (chord[i] != "X") {
+                                                        wherepressed = 2 * chord[i] + 1
+                                                        //texto="Cuerda "+i+" Wherepressed = "+wherepressed
+                                                        if (wherepressed == 1) {
+                                                            txt = "<img src=ibola.gif>"
+                                                        } else {
+                                                            txt = "<img src=bola.gif>"
+                                                        }
+                                                        fret[wherepressed].innerHTML = txt
+                                                    } else {
+                                                        fret[1].innerHTML = "<img src=icruz.gif>"
+                                                    }
+                                                }
+
+                                            }
+
+                                        }
+
+                                        function cleanfretboard()
+                                        {
+                                            var chords = document.getElementById("fretboard").rows
+                                            for (i = 0; i < 5; i++) {
+                                                fret = chords[i].cells
+                                                fret[1].innerHTML = "<img src=ivacio.gif>"
+                                                for (j = 3; j <= 31; j = j + 2) {
+                                                    fret[j].innerHTML = "<img src=vacio.gif>"
+                                                }
+                                            }
+
+                                        }
+
+                                        function hextodec(hexval)
+                                        {
+                                            if (hexval == "A") {
+                                                num = 10
+                                            } else if (hexval == "B") {
+                                                num = 11
+                                            } else if (hexval == "C") {
+                                                num = 12
+                                            } else if (hexval == "D") {
+                                                num = 13
+                                            } else if (hexval == "E") {
+                                                num = 14
+                                            } else if (hexval == "F") {
+                                                num = 15
+                                            } else {
+                                                num = 1 * hexval
+                                            }
+                                            return num
+                                        }
+
+                                        function getchord(chordvalue, modevalue, version)
+                                        {
+
+                                            var chord = new Array(6)
+
+                                            offset = 0
+                                            for (i = 0; i < chordvalue; i++) {
+                                                offset = offset + chordversions[modevalue][i][2]
+                                            }
+
+                                            for (i = 0; i < 6; i++) {
+                                                absversion = offset + version
+                                                subchord = chordtable[modevalue][absversion].substr(i, 1)
+                                                if (subchord != "X") {
+                                                    chord[i] = hextodec(subchord);
+                                                } else {
+                                                    chord[i] = subchord;
+                                                }
+                                            }
+                                            return chord
+
+                                        }
+
+                                        function toggletype(type)
+                                        {
+
+                                            if (type != currenttype) {
+                                                a = document.getElementById("chord")
+                                                b = document.getElementById("majmin")
+                                                c = document.getElementById("special")
+                                                a.selectedIndex = 0
+                                                b.selectedIndex = 0
+                                                c.selectedIndex = 0
+
+                                                if (type == 1) {
+                                                    a.disabled = false
+                                                    b.disabled = false
+                                                    c.disabled = true
+                                                } else if (type == 2) {
+                                                    a.disabled = true
+                                                    b.disabled = true
+                                                    c.disabled = false
+                                                }
+                                                currentversion = 0
+                                                cleanfretboard()
+                                                updateheading()
+                                                currenttype = type
+                                            }
+                                        }
+
+                                        function togglenotation()
+                                        {
+                                            var list1 = document.getElementById("chord")
+                                            var list2 = document.getElementById("special")
+                                            var button = document.getElementById("bt_not")
+
+                                            if (notation == 0) {
+                                                list1.options[1].text = "DO"
+                                                list1.options[2].text = "DO#/REb"
+                                                list1.options[3].text = "RE"
+                                                list1.options[4].text = "RE#/MIb"
+                                                list1.options[5].text = "MI"
+                                                list1.options[6].text = "FA"
+                                                list1.options[7].text = "FA#/SOLb"
+                                                list1.options[8].text = "SOL"
+                                                list1.options[9].text = "SOL#/LAb"
+                                                list1.options[10].text = "LA"
+                                                list1.options[11].text = "LA#/SIb"
+                                                list1.options[12].text = "SI"
+
+                                                list2.options[1].text = "DO/MI"
+                                                list2.options[2].text = "DO/FA"
+                                                list2.options[3].text = "DO/SOL"
+                                                list2.options[4].text = "RE/FA#"
+                                                list2.options[5].text = "RE/DO"
+                                                list2.options[6].text = "RE/SI"
+                                                list2.options[7].text = "RE/SIb"
+                                                list2.options[8].text = "RE/LA"
+                                                list2.options[9].text = "MI/SI"
+                                                list2.options[10].text = "MI/DO#"
+                                                list2.options[11].text = "MI/RE"
+                                                list2.options[12].text = "MI/RE#"
+                                                list2.options[13].text = "MI/FA"
+                                                list2.options[14].text = "MI/FA#"
+                                                list2.options[15].text = "MI/SOL"
+                                                list2.options[16].text = "MI/SOL#"
+                                                list2.options[17].text = "MIm/SI"
+                                                list2.options[18].text = "MIm/DO#"
+                                                list2.options[19].text = "MIm/RE"
+                                                list2.options[20].text = "MIm/RE#"
+                                                list2.options[21].text = "MIm/FA"
+                                                list2.options[22].text = "MIm/FA#"
+                                                list2.options[23].text = "MIm/SOL"
+                                                list2.options[24].text = "MIm/SOL#"
+                                                list2.options[25].text = "FA/DO"
+                                                list2.options[26].text = "FA/RE"
+                                                list2.options[27].text = "FA/RE#"
+                                                list2.options[28].text = "FA/MI"
+                                                list2.options[29].text = "FA/SOL"
+                                                list2.options[30].text = "FA/LA"
+                                                list2.options[31].text = "FAm/DO"
+                                                list2.options[32].text = "SOL/RE"
+                                                list2.options[33].text = "SOL/MI"
+                                                list2.options[34].text = "SOL/FA"
+                                                list2.options[35].text = "SOL/FA#"
+                                                list2.options[36].text = "SOL/SI"
+                                                list2.options[37].text = "SOLm/RE"
+                                                list2.options[38].text = "LA/SOL#"
+                                                list2.options[39].text = "LA/SOL"
+                                                list2.options[40].text = "LA/FA#"
+                                                list2.options[41].text = "LA/FA"
+                                                list2.options[42].text = "LA/MI"
+                                                list2.options[43].text = "LA/DO#"
+                                                list2.options[44].text = "LAm/SOL#"
+                                                list2.options[45].text = "LAm/SOL"
+                                                list2.options[46].text = "LAm/FA#"
+                                                list2.options[47].text = "LAm/FA"
+                                                list2.options[48].text = "LAm/MI"
+                                                list2.options[49].text = "LAm/DO"
+
+                                                notation = 1
+                                                button.value = "Notación Inglesa"
+                                                button.size = 300;
+
+                                            } else {
+
+
+                                                list1.options[1].text = "C"
+                                                list1.options[2].text = "C#/Db"
+                                                list1.options[3].text = "D"
+                                                list1.options[4].text = "D#/Eb"
+                                                list1.options[5].text = "E"
+                                                list1.options[6].text = "F"
+                                                list1.options[7].text = "F#/Gb"
+                                                list1.options[8].text = "G"
+                                                list1.options[9].text = "G#/Ab"
+                                                list1.options[10].text = "A"
+                                                list1.options[11].text = "A#/Bb"
+                                                list1.options[12].text = "B"
+
+                                                list2.options[1].text = "C/E"
+                                                list2.options[2].text = "C/F"
+                                                list2.options[3].text = "C/G"
+                                                list2.options[4].text = "D/F#"
+                                                list2.options[5].text = "D/C"
+                                                list2.options[6].text = "D/B"
+                                                list2.options[7].text = "D/Bb"
+                                                list2.options[8].text = "D/A"
+                                                list2.options[9].text = "E/B"
+                                                list2.options[10].text = "E/C#"
+                                                list2.options[11].text = "E/D"
+                                                list2.options[12].text = "E/D#"
+                                                list2.options[13].text = "E/F"
+                                                list2.options[14].text = "E/F#"
+                                                list2.options[15].text = "E/G"
+                                                list2.options[16].text = "E/G#"
+                                                list2.options[17].text = "Em/B"
+                                                list2.options[18].text = "Em/C#"
+                                                list2.options[19].text = "Em/D"
+                                                list2.options[20].text = "Em/D#"
+                                                list2.options[21].text = "Em/F"
+                                                list2.options[22].text = "Em/F#"
+                                                list2.options[23].text = "Em/G"
+                                                list2.options[24].text = "Em/G#"
+                                                list2.options[25].text = "F/C"
+                                                list2.options[26].text = "F/D"
+                                                list2.options[27].text = "F/D#"
+                                                list2.options[28].text = "F/E"
+                                                list2.options[29].text = "F/G"
+                                                list2.options[30].text = "F/A"
+                                                list2.options[31].text = "Fm/C"
+                                                list2.options[32].text = "G/D"
+                                                list2.options[33].text = "G/E"
+                                                list2.options[34].text = "G/F"
+                                                list2.options[35].text = "G/F#"
+                                                list2.options[36].text = "G/B"
+                                                list2.options[37].text = "Gm/D"
+                                                list2.options[38].text = "A/G#"
+                                                list2.options[39].text = "A/G"
+                                                list2.options[40].text = "A/F#"
+                                                list2.options[41].text = "A/F"
+                                                list2.options[42].text = "A/E"
+                                                list2.options[43].text = "A/C#"
+                                                list2.options[44].text = "Am/G#"
+                                                list2.options[45].text = "Am/G"
+                                                list2.options[46].text = "Am/F#"
+                                                list2.options[47].text = "Am/F"
+                                                list2.options[48].text = "Am/E"
+                                                list2.options[49].text = "Am/C"
+                                                notation = 0
+                                                button.value = "Notación Latina"
+                                                button.size = 300;
+
+                                            }
+
+                                            updateheading()
+
+                                        }
+
+
+            </script>
+
+            <br><hr><center>
+                <TABLE id="cmdpanel" cellpadding=0>
+                    <TR><TD align=left width=200>Acorde:</TD><TD align=left width=200>Versión</TD><TD align=center width=200><input type="button" value="Siguiente" onClick="nextversion()"/></TD></TR>
+                </TABLE>
+
+                <TABLE id="fretboard" border="0"  cellPadding="0" cellSpacing="0">
+                    <TBODY>
+                        <TR class="guitar"><TD>e&nbsp;&nbsp;</TD><TD><img src=ivacio.gif></TD><TD><img src=marco.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                        </TR>
+                        <TR class="guitar"><TD>A&nbsp;&nbsp;</TD><TD><img src=ivacio.gif></TD><TD><img src=marco.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                        </TR>
+                        <TR class="guitar"><TD>E&nbsp;&nbsp;</TD><TD><img src=ivacio.gif></TD><TD><img src=marco.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                        </TR>
+                        <TR class="guitar"><TD>C&nbsp;&nbsp;</TD><TD><img src=ivacio.gif></TD><TD><img src=marco.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                        </TR>
+                        <TR class="guitar"><TD>G&nbsp;&nbsp;</TD><TD><img src=ivacio.gif></TD><TD><img src=marco.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+                            <TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD><TD><img src=vacio.gif></TD><TD><img src=traste.gif></TD>
+
+
+                        <TR class="guitar" align=center valign=top height=50><TD></TD><TD></TD><TD></TD><TD>1</TD><TD></TD><TD>2</TD><TD></TD><TD>3</TD><TD></TD>
+                            <TD>4</TD><TD></TD><TD>5</TD><TD></TD><TD>6</TD><TD></TD><TD>7</TD><TD></TD>
+                            <TD>8</TD><TD></TD><TD>9</TD><TD></TD><TD>10</TD><TD></TD><TD>11</TD><TD></TD>
+                            <TD>12</TD><TD></TD><TD>13</TD><TD></TD><TD>14</TD><TD></TD><TD>15</TD>
+                        </TR>
+                    </TBODY>
+                </TABLE>
+                <table id="lists" style="margin-left:20px"><tr>
+                        <td colspan=2><button type="button" style="width:250px; height:30px" onclick="toggletype(1)">Acordes normales</button>
+                        </td>
+                        <td align=center><button type="button" style="width:120px; height:30px"  onclick="toggletype(2)">Acordes especiales</button></td>
+                        <td rowspan=3 class="instruc2" valign=top style="padding-left:30px; text-align:justify">
+                            Instrucciones:
+                            <UL>
+                                <li>Selecciona entre acordes <i>normales</i> o <i>especiales</i> pinchando el botón correspondiente.
+                                <li>Para acordes normales, selecciona el <i>Tono</i> y luego el <i>Modo</i> (mayor, menor, etc.).
+                                <li>Para acordes especiales, selecciona directamente el acorde.
+                                <li>Cada acorde puede tener más de una <i>Versión</i> o <i>Posición</i>.
+                                <li>Para ver las diferentes versiones de un acorde, pincha el botón <i>Siguiente</i>.
+                                <li>Utiliza el botón <i>Notación</i> para cambiar entre las notaciones latina e inglesa.
+                            </UL>
+
+                        </TD>
+                    </TR>
+                    <tr>
+                        <td align=right valign=top width=120>
+                            <SELECT Id="chord" style="width:120px; margin-right:10px" SIZE=12 onChange="displaychord(1)" onClick="displaychord(1)">
+                                <OPTION SELECTED value=0>Seleccione Tono</option>
+                                <OPTION value=1>C</option>
+                                <OPTION value=2>C#/Db</option>
+                                <OPTION value=3>D</option>
+                                <OPTION value=4>D#/Eb</option>
+                                <OPTION value=5>E</option>
+                                <OPTION value=6>F</option>
+                                <OPTION value=7>F#/Gb</option>
+                                <OPTION value=8>G</option>
+                                <OPTION value=9>G#/Ab</option>
+                                <OPTION value=10>A</option>
+                                <OPTION value=11>A#/Bb</option>
+                                <OPTION value=12>B</option>
+                            </SELECT></td>
+                        <td valign=top width=120>
+                            <SELECT Id="majmin" style="width:120px; margin-right:25px" SIZE=12 onChange="displaychord(1)" onClick="displaychord(1)">
+                                <OPTION SELECTED value=0>Seleccione Modo</option>
+                                <OPTION value=1>Mayor</option>
+                                <OPTION value=2>Menor</option>
+                                <OPTION value=3>dim</option>
+                                <OPTION value=4>aug</option>
+                                <OPTION value=5>sus</option>
+                                <OPTION value=6>6</option>
+                                <OPTION value=7>7</option>
+                                <OPTION value=8>maj7</option>
+                                <OPTION value=9>9</option>
+                                <OPTION value=10>add9</option>
+                                <OPTION value=11>m6</option>
+                                <OPTION value=12>m7</option>
+                                <OPTION value=13>mmaj7</option>
+                                <OPTION value=14>m9</option>
+                                <OPTION value=15>11</option>
+                                <OPTION value=16>7sus4</option>
+                                <OPTION value=17>13</option>
+                                <OPTION value=18>6add9</option>
+                                <OPTION value=19>dim5</option>
+                                <OPTION value=20>7dim5</option>
+                                <OPTION value=21>7maj5</option>
+                                <OPTION value=22>maj9</option>
+                            </SELECT></td>
+                        <td valign=top>
+                            <SELECT Id="special" style="width:120px" SIZE=12 onChange="displaychord(2)" onClick="displaychord(2)" disabled="true">
+                                <OPTION SELECTED value=0>Seleccione Acorde</option>
+                                <option value=1>C/E</option>
+                                <option value=3>C/G</option>
+                                <option value=4>D/F#</option>
+                                <option value=8>D/A</option>
+                                <option value=9>E/B</option>
+                                <option value=16>E/G#</option>
+                                <option value=17>Em/B</option>
+                                
+                                <option value=25>F/C</option>
+                                
+                                <option value=30>F/A</option>
+                                <option value=31>Fm/C</option>
+                                <option value=32>G/D</option>
+                                <option value=36>G/B</option>
+                                <option value=37>Gm/D</option>
+                              
+                                <option value=42>A/E</option>
+                                <option value=43>A/C#</option>
+                               
+                                <option value=47>Am/E</option>
+                            
+                                <option value=49>Am/C</option>
+                            </SELECT></td>
+                    </tr>
+                    <tr><TD colspan=3 align=center><button type="button" style="width:200px; height:30px" onclick="togglenotation()" id="bt_not">Notación latina</button></TR>
+                </table></center>
+
+
+        </div><div id=f_foot><script>tStats()</script>
+        </DIV>
+        
+</body>
